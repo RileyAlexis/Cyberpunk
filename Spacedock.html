@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://pixijs.download/release/pixi.js"></script>
+    <title>Space Dock</title>
+</head>
+<body>
+    <script>
+        let app = new PIXI.Application({width:640, height:360});
+        document.body.appendChild(app.view);
+        let sprite = PIXI.Sprite.from('./art/sample.png');
+        app.stage.addChild(sprite);
+
+let elapsed = 0.0;
+app.ticker.add((delta) => {
+    elapsed += delta;
+    sprite.x = 100.0 + Math.cos(elapsed/50.0) * 100.0;
+});
+
+    </script>
+
+
+
+</body>
+</html>

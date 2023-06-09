@@ -1,0 +1,70 @@
+
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    background: darkgray;
+    height: 40vh;
+    width:100%;
+    align-items:center;
+    justify-content: center;
+    
+}
+
+.menuMain {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:large;
+    color:blanchedalmond;
+    display:flex;
+    padding: 5%;
+    max-height: 40vh;
+    max-width: 40vh;
+    transform: translateY(-20%);
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.menuActive {
+    flex-grow: 2;
+    font-weight: 200;
+    color:aquamarine;
+}
+
+.subMenu {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:large;
+    color:blanchedalmond;
+    display:flex;
+    flex: 1 0 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuPanel {
+    display: flex;
+    flex:1;
+}
+
+.headerGraphic {
+    display:flex;
+    font-family:'Courier New', Courier, monospace;
+    background: darkgray;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvasContainer {
+    display:canvas;
+    
+}
+
+.playfield {
+    display:block;
+    background: #eee;
+    margin: 0 auto;
+}
